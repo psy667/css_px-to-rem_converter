@@ -12,7 +12,7 @@ function convert(){
   arr.forEach(function(item, i){
     if(~item.indexOf('font-size:')){
       let start = item.indexOf('font-size')
-      arr[i] = item.slice(0, start)+'font-size: '+parseInt(item.slice(start+10))/standartFontSize.value;+'rem;';
+      arr[i] = item.slice(0, start)+'font-size: '+parseInt(item.slice(start+10))/standartFontSize.value+'rem;';
      };
    });
 
